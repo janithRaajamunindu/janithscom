@@ -1,28 +1,28 @@
 {
   "app/page.tsx -> ./about-section/About": {
-    "id": "app/page.tsx -> ./about-section/About",
+    "id": 7300,
     "files": [
-      "static/css/_app-pages-browser_app_about-section_About_tsx.css",
-      "static/chunks/_app-pages-browser_app_about-section_About_tsx.js"
+      "static/css/b53b9f37e034f9f3.css",
+      "static/chunks/300.524855eeef8d4681.js"
     ]
   },
   "app/page.tsx -> ./contact-section/Contact": {
-    "id": "app/page.tsx -> ./contact-section/Contact",
+    "id": 1441,
     "files": [
-      "static/css/_app-pages-browser_app_contact-section_Contact_tsx.css",
-      "static/chunks/_app-pages-browser_app_contact-section_Contact_tsx.js"
+      "static/css/b53b9f37e034f9f3.css",
+      "static/chunks/441.98de7972d0bb6603.js"
     ]
   },
   "app/page.tsx -> ./footer/Footer": {
-    "id": "app/page.tsx -> ./footer/Footer",
+    "id": 7226,
     "files": [
-      "static/chunks/_app-pages-browser_app_footer_Footer_tsx.js"
+      "static/chunks/226.9eaf41a35c567645.js"
     ]
   },
   "app/page.tsx -> ./work-section/Work": {
-    "id": "app/page.tsx -> ./work-section/Work",
+    "id": 7175,
     "files": [
-      "static/chunks/_app-pages-browser_app_work-section_Work_tsx.js"
+      "static/chunks/175.e0004d59d2e4fc2f.js"
     ]
   }
 }
