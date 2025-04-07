@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+// import "./preLoader.css";
 import "./preLoader.css";
 import { preLoaderAnim } from "./loader";
 const PreLoader = () => {
