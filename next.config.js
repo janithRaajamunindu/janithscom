@@ -2,10 +2,19 @@
 const nextConfig = {
   optimizeFonts: false,
   images: {
-    domains: [
-      "user-images.githubusercontent.com",
-      "cdn.hashnode.com",
-      "github.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "user-images.githubusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.hashnode.com",
+      },
+      {
+        protocol: "https",
+        hostname: "github.com",
+      },
     ],
   },
 };

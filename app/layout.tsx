@@ -1,6 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Syne } from "next/font/google";
 
 const syne = Syne({
@@ -9,12 +9,17 @@ const syne = Syne({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+// ✅ metadata remains as-is, minus `colorScheme`
 export const metadata: Metadata = {
   title: "Janith.coder",
   description: "Next JS Portfolio",
   generator: "Next.js",
-  colorScheme: "dark",
   category: "technology",
+};
+
+// ✅ Move colorScheme to viewport
+export const viewport: Viewport = {
+  colorScheme: "dark",
 };
 
 type RootLayoutProps = {
