@@ -3,6 +3,7 @@
 import PreLoader from "./animations/PreLoader/PreLoader";
 import Hero from "./hero-section/Hero";
 import Reviews from "./reviews-section/ReviewGrid";
+import "./globals.css";
 
 //Blobity Cursor
 import useBlobity from "blobity/lib/react/useBlobity";
