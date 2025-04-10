@@ -4,6 +4,8 @@ import { motion, useScroll, useTransform } from "framer-motion"; // Animation
 import AnimatedTitle from "../animations/AnimatedTitle";
 import { useRef } from "react";
 import AnimatedBody from "../animations/AnimatedBody";
+import Link from "next/link";
+import { bodyAnimation } from "../animations/animations";
 
 const ProjectCard = ({
   id,
@@ -11,6 +13,7 @@ const ProjectCard = ({
   description,
   technologies,
   image,
+  demo,
 }: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -69,7 +72,7 @@ const ProjectCard = ({
           }
         />
 
-        <div className="mt-9 flex gap-4">
+        <div className="mt-5 flex gap-4">
           {technologies.map((tech, index) => (
             <AnimatedTitle
               text={tech}
@@ -82,9 +85,31 @@ const ProjectCard = ({
             />
           ))}
         </div>
+        <div className="mt-2 flex justify-start">
+          {demo && (
+            <motion.a
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden rounded-full border-2 border-[#e4ded7] py-1 px-2 font-semibold text-[#e4ded7] sm:block md:text-[16px] lg:block"
+              variants={bodyAnimation}
+              // whileHover={{ scale: 1.05 }}
+              // whileTap={{ scale: 0.95 }}
+            >
+              Check live site
+            </motion.a>
+          )}
+        </div>
       </div>
     </motion.div>
   );
 };
 
 export default ProjectCard;
+
+{
+  /* <motion.button
+              className="hidden rounded-full border-2 border-[#e4ded7] py-2 px-4 font-semibold text-[#e4ded7] sm:block md:text-[16px] lg:block"
+              variants={bodyAnimation}
+            > */
+}
