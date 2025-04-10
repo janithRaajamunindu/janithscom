@@ -17,7 +17,7 @@ export const devProjects = [
     technologies: ["Next.js", "Three.js", "GSAP"],
     github: "https://github.com/",
     demo: "https://suburbia-skatess.netlify.app/",
-    image: require(".//../../public/projects/guy-1.png"),
+    image: require(".//../../public/projects/guy1.png"),
     available: true,
   },
   {

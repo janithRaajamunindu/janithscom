@@ -44,7 +44,7 @@ const ProjectCard = ({
       <Image
         src={image}
         alt={name}
-        className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
+        className={`absolute -bottom-2 w-[60%] sm:w-[75%] md:w-[50%] lg:max-w-[50-%] ${
           id % 2 === 0 ? "right-0" : "left-0"
         }`}
       />
